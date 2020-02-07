@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Awards from "./components/Awards"
+import Awards from "./components/Awards/Awards"
 import Experiencee from "./components/Experience/Experience"
 import Home from "./components/Home/Home"
 import NoMatch from "./components/NoMatch/NoMatch"
