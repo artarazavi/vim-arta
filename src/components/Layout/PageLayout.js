@@ -31,13 +31,13 @@ export const PageLayout = (props) => (
         <div className="page-layout">
             <Title location={props.location} />
             <Row>
-                <Col xs={1} md={2} className="sidebar-container">
+                <Col xs={2} md={2} className="sidebar-container">
                     <SideBar />
                 </Col>
                 <div className="border-container">
                     <Border />
                 </div>
-                <Col xs={10} md={6} className="route-container">
+                <Col xs={8} md={6} className="route-container">
                     <Layout className="router-layout">
                         {props.children}
                     </Layout>

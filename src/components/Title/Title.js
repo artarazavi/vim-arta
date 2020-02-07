@@ -15,6 +15,9 @@ class Title extends Component {
 
 
     render() {
+        console.log(this.props.location);
+        let text = (this.props.location.pathname === "/") ? ("cd ."): ("cd " + this.props.location.pathname.substring(1)); 
+
         const Styles = styled.div`
             .page-title{
                 font-size: 50px;
@@ -35,7 +38,7 @@ class Title extends Component {
                             element: '▍',
                             blink: true }}
                     >
-                        {this.props.location.pathname} 
+                        {text} 
                     </Typist>
                 </div>
             </Styles>
