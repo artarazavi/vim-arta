@@ -22,13 +22,22 @@ const Styles = styled.div`
                     marigin-right: 0px;
                     padding : 0px;
                 }
-                
+                .user-input{
+                    display: inline-block;
+                    float: left;
+                    font-size: 50px;
+                    color: #B7E88D;
+                    font-family: 'Roboto Mono', monospace;
+                    margin-top: 18px;
+                    margin-right: 15px;
+                }
             }
         `;
 
 export const PageLayout = (props) => (
     <Styles>
         <div className="page-layout">
+            <div className="user-input"><h1>arta-vim:~$ </h1></div>
             <Title location={props.location} />
             <Row>
                 <Col xs={2} md={2} className="sidebar-container">

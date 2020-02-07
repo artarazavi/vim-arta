@@ -16,7 +16,7 @@ class Title extends Component {
 
     render() {
         console.log(this.props.location);
-        let text = (this.props.location.pathname === "/") ? ("cd ."): ("cd " + this.props.location.pathname.substring(1)); 
+        let text = (this.props.location.pathname === "/") ? ("vim --cmd :help"): ("cat " + this.props.location.pathname.substring(1)); 
 
         const Styles = styled.div`
             .page-title{
@@ -28,19 +28,16 @@ class Title extends Component {
         
         return (
             <Styles>
-                <div className="title-container">
-                    
-                    <Typist
-                        className="page-title route-change"
-                        avgTypingDelay={85}
-                        startDelay={150}
-                        cursor={{ hideWhenDone: false,
-                            element: '▍',
-                            blink: true }}
-                    >
-                        {text} 
-                    </Typist>
-                </div>
+                <Typist
+                    className="page-title"
+                    avgTypingDelay={85}
+                    startDelay={200}
+                    cursor={{ hideWhenDone: false,
+                        element: '▍',
+                        blink: true }}
+                >
+                    {text} 
+                </Typist>
             </Styles>
         );
     }
