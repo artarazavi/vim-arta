@@ -4,12 +4,13 @@ import { withRouter } from 'react-router-dom'
 import SideBarItem from './SideBarItem/SideBarItem';
 import styled from 'styled-components';
 
-const routes = ['back', '/', '/experience', '/education', '/awards'];
+const routes = ['back', '/', '/experience', '/education', '/awards', '/workshops'];
 
 class SideBar extends Component {
     constructor(props) {
         super(props);
         this.moveFocus = this.moveFocus.bind(this);
+        this.moveFocusMulti = this.moveFocusMulti.bind(this);
         this.getNext = this.getNext.bind(this);
         this.getPrev = this.getPrev.bind(this);
     }
@@ -45,6 +46,12 @@ class SideBar extends Component {
             this.getPrev(active);
         }
     }
+
+    moveFocusMulti(e) {
+        if (e.key === "?") {
+            this.props.history.push('/');
+        }
+    }
     
     render() {
         const Styles = styled.div`
@@ -57,15 +64,16 @@ class SideBar extends Component {
         `;
 
         document.onkeydown = this.moveFocus;
-
+        document.onkeypress = this.moveFocusMulti;
         return (
             <Styles>
                 <Menu borderless vertical stackable fixed='left' className='side-nav'>
                     <SideBarItem path='back' label='.. (up a dir)' location={this.props.location} history={this.props.history}/>
-                    <SideBarItem path='/' label='Home/' location = {this.props.location}/>
+                    <SideBarItem path='/' label='Help/' location = {this.props.location}/>
                     <SideBarItem path='/experience' label='Experience/' location={this.props.location} />
                     <SideBarItem path='/education' label='Education/' location={this.props.location} />
                     <SideBarItem path='/awards' label='Awards/' location={this.props.location} />
+                    <SideBarItem path='/workshops' label='Workshops/' location={this.props.location} />
                 </Menu>
             </Styles>
         );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ListItem from '../ListItem/ListItem';
-import ProjectItem from '../ProjectItem/ProjectItem';
+import ProjectItem from './ProjectItem/ProjectItem';
 import { PageLayout } from '../Layout/PageLayout';
 
 class Education extends Component {
@@ -34,7 +34,8 @@ class Education extends Component {
                     <br/>
                     <ProjectItem
                         title ="Masters Research project"
-                        text = {projectGrad}/>
+                        text = {projectGrad}
+                        advisors = "Brain Neil Levine and Mark D. Corner"/>
                     <br/>
                     <ListItem
                         name="University of Massachusetts Amherst"
@@ -46,7 +47,8 @@ class Education extends Component {
                     <br />
                     <ProjectItem 
                         title="Thredr - Undergraduate Independent Study Project and HackHer413"
-                        text={projectUgrad}/>
+                        text={projectUgrad}
+                        advisors= "Tim Richards"/>
                 </div>
             </PageLayout>
         );

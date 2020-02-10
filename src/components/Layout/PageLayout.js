@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import SideBar from "../../containers/SideBar/SideBar";
-import Border from '../Border/Border';
-import MidBorder from '../MidBorder/MidBorder';
+import Border from '../../containers/Border/Border';
+import MidBorder from '../../containers/MidBorder/MidBorder';
 import { Layout } from './Layout';
 import Title from "../Title/Title"
 import Row from "react-bootstrap/Row"
@@ -14,7 +13,7 @@ const Styles = styled.div`
                 padding-right: 5px;
                 padding-left: 5px;
                 .route-container{
-                    margin-left: 12px;
+                    margin-left: 5px;
                     margin-right: 12px;
                     padding-right: 0px;
                 }
@@ -37,7 +36,7 @@ const Styles = styled.div`
 export const PageLayout = (props) => (
     <Styles>
         <div className="page-layout">
-            <div className="user-input"><h1>arta-vim:~$ </h1></div>
+            <div className="user-input"><h1>arta:~$ </h1></div>
             <Title location={props.location} />
             <Row>
                 <Col xs={2} md={2} className="sidebar-container">

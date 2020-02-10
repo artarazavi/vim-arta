@@ -56,7 +56,7 @@ class SideBarItem extends Component {
         return (
             <Styles>
                 {goingBack? (
-                    <Link className="navlink" onClick={this.goBack}>
+                    <Link className="navlink" onClick={this.goBack} to="#">
                         <Menu.Item className='sidebar-item'>
                             <div className='sidebar-item-alignment-container'>
                                 <span>{this.props.label}</span>

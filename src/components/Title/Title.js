@@ -15,13 +15,12 @@ class Title extends Component {
 
 
     render() {
-        console.log(this.props.location);
-        let text = (this.props.location.pathname === "/") ? ("vim --cmd :help"): ("cat " + this.props.location.pathname.substring(1)); 
+        let text = (this.props.location.pathname === "/") ? ("vim --cmd :help"): ("vim " + this.props.location.pathname.substring(1)); 
 
         const Styles = styled.div`
             .page-title{
                 font-size: 50px;
-                color: #B7E88D;
+                color: #FFD7AF;
                 font-family: 'Roboto Mono', monospace;
             }
         `;
@@ -32,7 +31,7 @@ class Title extends Component {
                     className="page-title"
                     avgTypingDelay={85}
                     startDelay={200}
-                    cursor={{ hideWhenDone: false,
+                    cursor={{ hideWhenDone: true,
                         element: '▍',
                         blink: true }}
                 >

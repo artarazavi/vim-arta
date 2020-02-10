@@ -3,9 +3,6 @@ import styled from 'styled-components';
 
 class ProjectItem extends Component {
 
-    constructor(props) {
-        super(props);
-    }
     render() {
         const Styles = styled.div`
             .project-item{
@@ -22,6 +19,11 @@ class ProjectItem extends Component {
                 .text{
                     color: #FFD7AF;
                     margin-left: 5px;
+                    margin-bottom: 3px;
+                }
+                .advisors{
+                    margin-left: 5px;
+                    color: #9780F3;
                 }
             }
         `;
@@ -31,6 +33,7 @@ class ProjectItem extends Component {
                 <div className="project-item">
                     <p className="title">{this.props.title}</p>
                     <p className="text">{this.props.text}</p>
+                    <p className="advisors">{"Advisors: " + this.props.advisors}</p>
                 </div>
             </Styles>
         );
