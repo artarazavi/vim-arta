@@ -52,7 +52,7 @@ class ListItem extends Component {
         }
         .list-bullet{
             width: 90%;
-            margin-left: 20px;
+            margin-left: 10px;
             font-family: 'Roboto Mono', monospace;
             font-size: 12px;
             line-height: 13px;

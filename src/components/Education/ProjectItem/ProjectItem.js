@@ -9,7 +9,7 @@ class ProjectItem extends Component {
                 font-family: 'Roboto Mono', monospace;
                 line-height: 13px;
                 font-size: 12px;
-                margin-left: 20px;
+                margin-left: 8px;
                 width: 90%;
                 .title{
                     font-size: 14px;

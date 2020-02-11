@@ -24,32 +24,29 @@ class SideBarItem extends Component {
             text-decoration: none;
         }
         .sidebar-item {
-        span {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 12px;
-            color: #79B1FF;
-            i{
-            margin-right: 20px;
-            color: #888888;
-            }
-        }
-        &.highlight-item {
-            background: rgba(0,0,0,.5);
-            opacity: 0.5;
             span {
-            font-weight: 600;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 12px;
+                color: #79B1FF;
+                i{
+                    margin-right: 20px;
+                    color: #888888;
+                }
             }
-            i{
-            color: #888888;
+            &.highlight-item {
+                background: rgba(0,0,0,.5);
+                opacity: 0.5;
+                span {
+                    font-weight: 600;
+                }
+                i{
+                    color: #888888;
+                }
             }
-        }
-        }
-        .sidebar-item:hover {
-            background: #727687;
         }
         .sidebar-item-alignment-container {
-        display: flex;
-        align-items: center;
+            display: flex;
+            align-items: center;
         }
         `;
 
