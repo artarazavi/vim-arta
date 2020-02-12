@@ -16,7 +16,7 @@ class Border extends Component {
             }
         `;
         let array = [];
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < this.props.count; i++) {
             const item = i < 9 ? <p className="border-items" key={i}>| {i + 1}</p> : <p className="border-items" key={i}>|{i + 1}</p>;
             array.push(
                 item

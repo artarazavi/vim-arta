@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import ListItem from '../ListItem/ListItem';
 import ProjectItem from './ProjectItem/ProjectItem';
-import { PageLayout } from '../Layout/PageLayout';
+import  PageLayout  from '../Layout/PageLayout';
 
 class Education extends Component {
     render() {
+        const isMobile = window.innerWidth <= 500;
+        let msRole = isMobile ? ("Masters in Computer Science Information Security") 
+                        : ("Masters in Computer Science -  Information Security");
         let textGrad = [
             "Bay State Scholar recipient",
             "Participated in three consecutive project development hackathons sponsored by companies like Google, Facebook, and Amazon."
@@ -27,8 +30,8 @@ class Education extends Component {
                     <ListItem
                         name= "University of Massachusetts Amherst"
                         location = "3.9 GPA"
-                        date= "Sep 2018 – Jan 2020"
-                        role= "Masters in Computer Science -  Information Security"
+                        date="Sep 2018 – Jan 2020"
+                        role= {msRole}
                         text= {textGrad}
                     />
                     <br/>

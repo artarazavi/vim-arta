@@ -1,22 +1,40 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import 'react-typist/dist/Typist.css';
-import { PageLayout } from '../Layout/PageLayout';
+import  PageLayout  from '../Layout/PageLayout';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
+        this.state = {
+            width: window.innerWidth
+        };
+    }
+
+    componentWillMount() {
+        window.addEventListener('resize', this.handleWindowSizeChange);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+
+    handleWindowSizeChange = () => {
+        this.setState({ width: window.innerWidth });
+    };
     
     render() {
+        const { width } = this.state;
+        const isMobile = width <= 500;
+        let wrapperStyle = isMobile? "wrapper-mobile":"wrapper-web";
         const Styles = styled.div`
             font-family: 'Roboto Mono', monospace;
             line-height: 13px;
             font-size: 14px;
             color: #B7E88D;
-            width: 90%;
+            width: 100%;
             line-height: 14px;
-            padding-left: 30px;
-            .hidden {
-                display: none;
-            }
             .line-item{
                 text-align: center;
             }
@@ -33,8 +51,11 @@ class Home extends Component {
                 width: 40%;
                 float: left;
             }
-            .wrapper{
-                padding-left: 80px;
+            .wrapper-web{
+                margin-left: 150px;
+            }
+            .wrapper-mobile{
+                margin-left: 30px;
             }
         `;
 
@@ -50,17 +71,13 @@ class Home extends Component {
                         <br />
                         <p className="line-item">Welcome to my website!</p>
                         <br />
-                        <div className="wrapper">
+                        <div className={wrapperStyle}>
                             <div className="first">type</div>
                             <div className="second">{"<up>"}</div>
                             <div className="third">to go up in side menu</div>
-                        </div>
-                        <div className="wrapper">
                             <div className="first">type</div>
                             <div className="second">{"<down>"}</div>
                             <div className="third">to go down in side menu</div>
-                        </div>
-                        <div className="wrapper">
                             <div className="first">type</div>
                             <div className="second">{"<?>"}</div>
                             <div className="third">to get back to this page</div>

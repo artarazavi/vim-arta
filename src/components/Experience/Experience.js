@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ListItem from '../ListItem/ListItem';
-import { PageLayout } from '../Layout/PageLayout';
+import  PageLayout  from '../Layout/PageLayout';
 
 
 class Experience extends Component {

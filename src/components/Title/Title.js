@@ -16,19 +16,25 @@ class Title extends Component {
 
     render() {
         let text = (this.props.location.pathname === "/") ? ("vim --cmd :help"): ("vim " + this.props.location.pathname.substring(1)); 
+        let titleStyle = this.props.mobile? "page-title page-mobile" : "page-title page-web";
 
         const Styles = styled.div`
             .page-title{
-                font-size: 50px;
                 color: #FFD7AF;
                 font-family: 'Roboto Mono', monospace;
+            }
+            .page-mobile{
+                font-size: 30px;
+            }
+            .page-web{
+                font-size: 50px;
             }
         `;
         
         return (
             <Styles>
                 <Typist
-                    className="page-title"
+                    className={titleStyle}
                     avgTypingDelay={85}
                     startDelay={200}
                     cursor={{ hideWhenDone: true,

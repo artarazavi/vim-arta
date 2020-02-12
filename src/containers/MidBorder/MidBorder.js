@@ -5,13 +5,24 @@ class MidBorder extends Component {
 
     render() {
         const Styles = styled.div`
-            border-left: 5px solid #4B5262;
-            padding-bottom: 840px;
+            .mid-border-right{
+                border-right: 5px solid #4B5262;
+                padding-bottom: 1180px;
+            }
+            .mid-border-left{
+                border-left: 5px solid #4B5262;
+                padding-bottom: 840px;
+            }
+            
         `;
 
         return (
             <Styles>
-                <div className="mid-border"></div>
+                {this.props.mobile ? (
+                    <div className="mid-border-right"></div>
+                ) : (
+                    <div className="mid-border-left"></div>
+                )}
             </Styles>
         );
     }

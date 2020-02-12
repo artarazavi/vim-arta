@@ -57,9 +57,9 @@ class SideBar extends Component {
         const Styles = styled.div`
             .ui.menu.fixed.side-nav {
                 overflow-y: auto;
-                padding-bottom: 700px;
                 padding-right:1px;
                 .menu-text{
+                    text-align: left;
                     font-family: 'Roboto Mono', monospace;
                     font-size: 13px;
                 }
@@ -72,6 +72,13 @@ class SideBar extends Component {
                     margin-bottom: 0px;
                 }
             }
+            .mobile-view{
+                padding-top:10px;
+                padding-bottom: 15px;
+            }
+            .web-view{
+                padding-bottom: 700px;
+            }
         `;
 
         let helpText= "\" Press ? for help" 
@@ -79,9 +86,10 @@ class SideBar extends Component {
 
         document.onkeydown = this.moveFocus;
         document.onkeypress = this.moveFocusMulti;
+        let menuStyle = this.props.mobile ? "side-nav mobile-view" : "side-nav web-view";
         return (
             <Styles>
-                <Menu borderless vertical stackable fixed='left' className='side-nav'>
+                <Menu borderless vertical stackable fixed='left' className={menuStyle}>
                     <p className=" menu-text help-text">{helpText}</p>
                     <SideBarItem path='back' label='.. (up a dir)' 
                         location={this.props.location} 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { PageLayout } from "../Layout/PageLayout";
+import  PageLayout  from "../Layout/PageLayout";
 import AwardsItem from './AwardsItem/AwardsItem';
 
 class Awards extends Component {
