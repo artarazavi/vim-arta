@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e946528339d7222ef96a336c5eff69b",
+    "revision": "77ed135ad64dab075a15b935bca8744d",
     "url": "/vim-arta/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vim-arta/static/css/2.bdea8e0c.chunk.css"
   },
   {
-    "revision": "700c0c9d3e8ab838b31f",
+    "revision": "14a446763efe81a1b488",
     "url": "/vim-arta/static/css/main.a6079327.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vim-arta/static/js/2.e23f1eaf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "700c0c9d3e8ab838b31f",
-    "url": "/vim-arta/static/js/main.cf1d87b1.chunk.js"
+    "revision": "14a446763efe81a1b488",
+    "url": "/vim-arta/static/js/main.65d95529.chunk.js"
   },
   {
     "revision": "27af8cedd990c37b13e7",
