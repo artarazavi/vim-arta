@@ -51,7 +51,7 @@ class WebLayout extends Component {
                             mobile={false}/>
                         </Col>
                         <div className="border-container">
-                            <Border count={50} />
+                            <Border count={55} />
                         </div>
                         <Col xs={8} md={6} className="route-container">
                             <Layout className="router-layout">

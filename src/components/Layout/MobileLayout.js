@@ -96,7 +96,7 @@ class MobileLayout extends Component {
                     )}
                     <Row>
                         <div className="border-container">
-                            <Border count={118} />
+                            <Border count={135} />
                         </div>
                         <Col xs={9} className="route-container">
                             <Layout className="router-layout">
