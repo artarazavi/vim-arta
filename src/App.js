@@ -8,6 +8,7 @@ import Education from './components/Education/Education';
 import Workshops from './components/Workshops/Workshops';
 import Info from './components/Info/info';
 import { withRouter } from 'react-router-dom'
+import AdMsg from './components/AdMsg/AdMsg';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/education" component={Education} />
             <Route path="/workshops" component={Workshops} />
             <Route path="/info" component={Info} />
+            <Route path="/admsg" component={AdMsg} />
             <Route component={NoMatch} />
           </Switch>  
       </React.Fragment>

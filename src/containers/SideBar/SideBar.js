@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { Menu} from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom'
 import SideBarItem from './SideBarItem/SideBarItem';
+import SideBarDrop from './SideBarDrop/SideBarDrop';
 import styled from 'styled-components';
 
-const routes = ['back', '/', '/experience', '/education', '/awards', '/workshops', '/info'];
+const routes = ['back', '/', '/experience', '/education', '/admsg', '/awards', '/workshops', '/info'];
 
 class SideBar extends Component {
     constructor(props) {
@@ -95,12 +96,31 @@ class SideBar extends Component {
                         location={this.props.location} 
                         history={this.props.history}/>
                     <p className="menu-text dir-text">{dirText}</p>
-                    <SideBarItem path='/' label='Help' location = {this.props.location}/>
-                    <SideBarItem path='/experience' label='Experience' location={this.props.location} />
-                    <SideBarItem path='/education' label='Education' location={this.props.location} />
-                    <SideBarItem path='/awards' label='Awards' location={this.props.location} />
-                    <SideBarItem path='/workshops' label='Workshops' location={this.props.location} />
-                    <SideBarItem path='/info' label='Info' location={this.props.location} />
+                    <SideBarItem path='/' 
+                        label='Help' 
+                        location = {this.props.location}/>
+                    <SideBarItem path='/experience' 
+                        label='Experience' 
+                        location={this.props.location} />
+                    <SideBarItem path='/education' 
+                        label='Education' 
+                        location={this.props.location} />
+                    <SideBarDrop 
+                        label='Projects'
+                        location={this.props.location}>
+                        <SideBarItem path='/admsg'
+                            label='Ad Messaging'
+                            location={this.props.location} />
+                    </SideBarDrop>
+                    <SideBarItem path='/awards' 
+                        label='Awards' 
+                        location={this.props.location} />
+                    <SideBarItem path='/workshops' 
+                        label='Workshops' 
+                        location={this.props.location} />
+                    <SideBarItem path='/info' 
+                        label='Info' 
+                        location={this.props.location} />
                 </Menu>
             </Styles>
         );

@@ -7,7 +7,7 @@ class MidBorder extends Component {
         const Styles = styled.div`
             .mid-border-right{
                 border-right: 5px solid #4B5262;
-                padding-bottom: 1180px;
+                padding-bottom: 2000px;
             }
             .mid-border-left{
                 border-left: 5px solid #4B5262;
