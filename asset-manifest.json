@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/vim-arta/static/css/main.a6079327.chunk.css",
-    "main.js": "/vim-arta/static/js/main.65d95529.chunk.js",
-    "main.js.map": "/vim-arta/static/js/main.65d95529.chunk.js.map",
-    "runtime-main.js": "/vim-arta/static/js/runtime-main.a2ab8898.js",
-    "runtime-main.js.map": "/vim-arta/static/js/runtime-main.a2ab8898.js.map",
-    "static/css/2.bdea8e0c.chunk.css": "/vim-arta/static/css/2.bdea8e0c.chunk.css",
-    "static/js/2.e23f1eaf.chunk.js": "/vim-arta/static/js/2.e23f1eaf.chunk.js",
-    "static/js/2.e23f1eaf.chunk.js.map": "/vim-arta/static/js/2.e23f1eaf.chunk.js.map",
-    "index.html": "/vim-arta/index.html",
-    "precache-manifest.b37fff3b90c5ff9c360a1dd26fc09896.js": "/vim-arta/precache-manifest.b37fff3b90c5ff9c360a1dd26fc09896.js",
-    "service-worker.js": "/vim-arta/service-worker.js",
-    "static/css/2.bdea8e0c.chunk.css.map": "/vim-arta/static/css/2.bdea8e0c.chunk.css.map",
-    "static/css/main.a6079327.chunk.css.map": "/vim-arta/static/css/main.a6079327.chunk.css.map",
-    "static/js/2.e23f1eaf.chunk.js.LICENSE.txt": "/vim-arta/static/js/2.e23f1eaf.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/vim-arta/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "arta.monster/static/css/main.a6079327.chunk.css",
+    "main.js": "arta.monster/static/js/main.0befb7a0.chunk.js",
+    "main.js.map": "arta.monster/static/js/main.0befb7a0.chunk.js.map",
+    "runtime-main.js": "arta.monster/static/js/runtime-main.c6ece7eb.js",
+    "runtime-main.js.map": "arta.monster/static/js/runtime-main.c6ece7eb.js.map",
+    "static/css/2.a54d8a59.chunk.css": "arta.monster/static/css/2.a54d8a59.chunk.css",
+    "static/js/2.52ef88bb.chunk.js": "arta.monster/static/js/2.52ef88bb.chunk.js",
+    "static/js/2.52ef88bb.chunk.js.map": "arta.monster/static/js/2.52ef88bb.chunk.js.map",
+    "index.html": "arta.monster/index.html",
+    "precache-manifest.7eb2bca27c26b86b4dd4d281cdab0caf.js": "arta.monster/precache-manifest.7eb2bca27c26b86b4dd4d281cdab0caf.js",
+    "service-worker.js": "arta.monster/service-worker.js",
+    "static/css/2.a54d8a59.chunk.css.map": "arta.monster/static/css/2.a54d8a59.chunk.css.map",
+    "static/css/main.a6079327.chunk.css.map": "arta.monster/static/css/main.a6079327.chunk.css.map",
+    "static/js/2.52ef88bb.chunk.js.LICENSE.txt": "arta.monster/static/js/2.52ef88bb.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "arta.monster/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2ab8898.js",
-    "static/css/2.bdea8e0c.chunk.css",
-    "static/js/2.e23f1eaf.chunk.js",
+    "static/js/runtime-main.c6ece7eb.js",
+    "static/css/2.a54d8a59.chunk.css",
+    "static/js/2.52ef88bb.chunk.js",
     "static/css/main.a6079327.chunk.css",
-    "static/js/main.65d95529.chunk.js"
+    "static/js/main.0befb7a0.chunk.js"
   ]
 }
