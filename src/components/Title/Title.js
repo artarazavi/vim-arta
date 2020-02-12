@@ -15,7 +15,8 @@ class Title extends Component {
 
 
     render() {
-        let text = (this.props.location.pathname === "/") ? ("vim --cmd :help"): ("vim " + this.props.location.pathname.substring(1)); 
+        let path = this.props.menu ? "  menu" : this.props.location.pathname;
+        let text = (path === "/") ? ("vim --cmd :help"): ("vim " + path.substring(1)); 
         let titleStyle = this.props.mobile? "page-title page-mobile" : "page-title page-web";
 
         const Styles = styled.div`

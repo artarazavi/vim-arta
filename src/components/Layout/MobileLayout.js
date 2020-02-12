@@ -80,17 +80,20 @@ class MobileLayout extends Component {
                             </span>
                         </div>
                     </div>
-                    <Title location={this.props.location}
-                        mobile={true} />
                     {this.state.visible?(
-                        <div className="toggle-menu">
-                            <SideBar
-                            mobile={true}/>
-                        </div>
+                        <>
+                            <Title menu={true}
+                                mobile={true} />
+                            <div className="toggle-menu">
+                                <SideBar
+                                mobile={true}/>
+                            </div>
+                        </>
                     ):(
-                        null                       
+                        <Title  menu={false}
+                        location={this.props.location}
+                        mobile={true} />                       
                     )}
-
                     <Row>
                         <div className="border-container">
                             <Border count={70} />
@@ -108,7 +111,6 @@ class MobileLayout extends Component {
             </Styles>
         );
     }
-
 }
 
 export default MobileLayout;
