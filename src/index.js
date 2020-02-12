@@ -8,7 +8,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import { BrowserRouter as Router} from 'react-router-dom';
 
 ReactDOM.render(
-    <Router>
+    <Router basename='/'>
         <App />
     </Router>
     , document.getElementById('root'));
