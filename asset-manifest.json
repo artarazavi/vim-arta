@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vim-arta/static/css/main.a6079327.chunk.css",
-    "main.js": "/vim-arta/static/js/main.314bce5c.chunk.js",
-    "main.js.map": "/vim-arta/static/js/main.314bce5c.chunk.js.map",
+    "main.js": "/vim-arta/static/js/main.cf1d87b1.chunk.js",
+    "main.js.map": "/vim-arta/static/js/main.cf1d87b1.chunk.js.map",
     "runtime-main.js": "/vim-arta/static/js/runtime-main.a2ab8898.js",
     "runtime-main.js.map": "/vim-arta/static/js/runtime-main.a2ab8898.js.map",
     "static/css/2.bdea8e0c.chunk.css": "/vim-arta/static/css/2.bdea8e0c.chunk.css",
     "static/js/2.e23f1eaf.chunk.js": "/vim-arta/static/js/2.e23f1eaf.chunk.js",
     "static/js/2.e23f1eaf.chunk.js.map": "/vim-arta/static/js/2.e23f1eaf.chunk.js.map",
     "index.html": "/vim-arta/index.html",
-    "precache-manifest.2b3f43b751cb94bed8749c9a4ab6826f.js": "/vim-arta/precache-manifest.2b3f43b751cb94bed8749c9a4ab6826f.js",
+    "precache-manifest.68d1e0af909d2a7345cc70cd10e2e86d.js": "/vim-arta/precache-manifest.68d1e0af909d2a7345cc70cd10e2e86d.js",
     "service-worker.js": "/vim-arta/service-worker.js",
     "static/css/2.bdea8e0c.chunk.css.map": "/vim-arta/static/css/2.bdea8e0c.chunk.css.map",
     "static/css/main.a6079327.chunk.css.map": "/vim-arta/static/css/main.a6079327.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.bdea8e0c.chunk.css",
     "static/js/2.e23f1eaf.chunk.js",
     "static/css/main.a6079327.chunk.css",
-    "static/js/main.314bce5c.chunk.js"
+    "static/js/main.cf1d87b1.chunk.js"
   ]
 }
