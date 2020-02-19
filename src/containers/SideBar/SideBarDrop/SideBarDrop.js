@@ -17,7 +17,6 @@ class SideBarDrop extends Component {
     }
 
     render() {
-        console.log(this.props.children.props.path);
         let isVisible = this.state.visible || this.props.children.props.path === this.props.location.pathname;
         const faArrowIcon = this.state.visible ? "fa fa-angle-down" : "fa fa-angle-right";
         const faFolderIcon = this.state.visible ? "fa fa-folder-open" : "fa fa-folder";

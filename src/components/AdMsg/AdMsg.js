@@ -4,9 +4,6 @@ import PageLayout from '../Layout/PageLayout';
 
 class AdMsg extends Component {
 
-    constructor(props) {
-        super(props);
-    }
     render() {
         const Styles = styled.div`
             font-family: 'Roboto Mono', monospace;

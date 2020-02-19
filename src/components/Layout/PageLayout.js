@@ -14,7 +14,7 @@ class PageLayout extends Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
     }
 
@@ -23,6 +23,7 @@ class PageLayout extends Component {
     }
 
     handleWindowSizeChange = () => {
+        console.log("resize");
         this.setState({ width: window.innerWidth });
     };
 

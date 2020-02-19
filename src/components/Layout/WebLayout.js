@@ -10,9 +10,6 @@ import styled from 'styled-components';
 
 class WebLayout extends Component {
 
-    constructor(props) {
-        super(props);
-    }
     render() {
         const Styles = styled.div`
             .page-layout{

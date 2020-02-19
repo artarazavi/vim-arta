@@ -4,9 +4,6 @@ import  PageLayout  from '../Layout/PageLayout';
 
 class Info extends Component {
 
-    constructor(props) {
-        super(props);
-    }
     render() {
         const Styles = styled.div`
             .personal-links{
