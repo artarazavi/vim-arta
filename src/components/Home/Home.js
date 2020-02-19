@@ -4,6 +4,7 @@ import 'react-typist/dist/Typist.css';
 import  PageLayout  from '../Layout/PageLayout';
 
 class Home extends Component {
+    _isMounted = false;
     constructor(props) {
         super(props);
         this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
@@ -14,10 +15,12 @@ class Home extends Component {
 
     componentDidMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
+        this._isMounted = true;
     }
 
     componentWillUnmount() {
         window.removeEventListener('resize', this.handleWindowSizeChange);
+        this._isMounted = false;
     }
 
     handleWindowSizeChange = () => {

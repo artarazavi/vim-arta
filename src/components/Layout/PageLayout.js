@@ -4,7 +4,7 @@ import MobileLayout from './MobileLayout';
 import WebLayout from './WebLayout';
 
 class PageLayout extends Component {
-
+    _isMounted = false;
     constructor(props) {
         super(props);
         this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
@@ -16,14 +16,15 @@ class PageLayout extends Component {
 
     componentDidMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
+        this._isMounted = true;
     }
 
     componentWillUnmount() {
         window.removeEventListener('resize', this.handleWindowSizeChange);
+        this._isMounted = false;
     }
 
     handleWindowSizeChange = () => {
-        console.log("resize");
         this.setState({ width: window.innerWidth });
     };
 

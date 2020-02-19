@@ -15,6 +15,7 @@ class Title extends Component {
 
 
     render() {
+        console.log("title loaded");
         let path = this.props.menu ? "  menu" : this.props.location.pathname;
         let text = (path === "/") ? ("vim --cmd :help"): ("vim " + path.substring(1)); 
         let titleStyle = this.props.mobile? "page-title page-mobile" : "page-title page-web";
