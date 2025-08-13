@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Experiencee from "./components/Experience/Experience";
+import Home from "./components/Home/Home";
+import NoMatch from "./components/NoMatch/NoMatch";
+import Education from './components/Education/Education';
+import Links from './components/Links/Links';
+import AdMsg from './components/AdMsg/AdMsg';
+import Blog from './components/Blog/Blog';
 
-function App() {
+const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/blog/:blogId" element={<Blog />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/experience" element={<Experiencee />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/links" element={<Links />} />
+        <Route path="/admsg" element={<AdMsg />} />
+        
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;

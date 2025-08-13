@@ -1,0 +1,35 @@
+experiences:
+  - name: "Rippling"
+    location: "San Francisco, CA"
+    date: "February 2023 – Present"
+    role: "Infrastructure Security Engineer"
+
+  - name: "CrowdStrike"
+    location: "San Francisco, CA"
+    date: "July 2021 – January 2023"
+    role: "Product Security Engineer - Signals Engineering"
+
+  - name: "Segment"
+    location: "San Francisco, CA"
+    date: "June 2020 – July 2021"
+    role: "Security Workflow Engineer"
+
+  - name: "VMware Carbon Black"
+    location: "Boston, MA"
+    date: "Jun 2018 – Aug 2019"
+    role: "Threat Research Intern - 3 consecutive internships"
+
+  - name: "Mass Mutual"
+    location: "Boston, MA"
+    date: "Jun 2017 – Aug 2017"
+    role: "Ethical Hack and Information Risk Intern"
+
+  - name: "University of Massachusetts Amherst Transportation Services"
+    location: "Amherst, MA"
+    date: "Sep 2018 – Jan 2020"
+    role: "Developer and IT services"
+
+  - name: "University of Massachusetts Amherst"
+    location: "Amherst, MA"
+    date: "Sep 2018 – Jan 2020"
+    role: "Teaching Assistant and Undergraduate Course Assistant"
