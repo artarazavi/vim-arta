@@ -1,0 +1,10 @@
+education:
+  - school: "University of Massachusetts Amherst"
+    degree: "Masters in Computer Science - Information Security"
+    date: "Sep 2018 – Jan 2020"
+    location: "Amherst, MA"
+
+  - school: "University of Massachusetts Amherst"
+    degree: "Bachelor of Science in Computer Science"
+    date: "Sep 2014 – May 2018"
+    location: "Amherst, MA"
